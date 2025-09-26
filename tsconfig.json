@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./school-payment-backend" },
+    { "path": "./school-payment-frontend" }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "school-payment-monorepo",
+  "private": true,
+  "scripts": {
+    "start:backend": "npm --prefix school-payment-backend run start:dev",
+    "start:frontend": "npm --prefix school-payment-frontend run dev",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "dependencies": {
+    "@nestjs/axios": "^4.0.1",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/mongoose": "^11.0.3",
+    "axios": "^1.12.2",
+    "bcryptjs": "^3.0.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "concurrently": "^8.2.2"
+  }
+}
